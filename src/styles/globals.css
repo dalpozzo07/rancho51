@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Rancho 51 vive à noite — a paleta assume o modo escuro como identidade
+  da marca, não como alternativa opcional. Por isso os tokens abaixo não
+  variam por tema: é um único mundo visual, deliberado.
+*/
+:root {
+  --color-bg: #120d08;
+  --color-bg-soft: #17110a;
+  --color-surface: #20170d;
+  --color-surface-2: #2b2011;
+  --color-border: #4f3c1e;
+  --color-border-soft: #2f2413;
+
+  --color-text: #f5ecdb;
+  --color-text-dim: #c2ac88;
+  --color-text-faint: #8c765a;
+
+  /* Dourado mais bruto/oxidado — latão envelhecido, não joia polida. */
+  --color-amber: #c6893a;
+  --color-amber-soft: #e2ac5c;
+  --color-amber-dim: #7a551f;
+
+  /* Fogo mais quente e vermelho — brasa de verdade, não terracota decorativo. */
+  --color-ember: #c94a24;
+  --color-ember-soft: #e87c46;
+  --color-ember-dim: #7a2c14;
+
+  /* Ferro/couro cru — usado em detalhes pequenos pra dar peso, sem virar cor principal. */
+  --color-iron: #6b5a42;
+
+  --color-on-amber: #170f07;
+}
+
+* {
+  border-color: var(--color-border-soft);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Grão sutil — textura de couro/parede crua por trás de tudo. Puramente decorativo,
+   por isso fica fora do fluxo de acessibilidade e não pesa no carregamento (SVG inline). */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+#top,
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+::selection {
+  background: var(--color-amber-dim);
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
