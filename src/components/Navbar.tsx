@@ -46,31 +46,31 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 h-20 transition-colors duration-500",
+        "fixed inset-x-0 top-0 z-50 h-24 transition-colors duration-500 lg:h-28",
         solid || open ? "border-b border-border bg-bg" : "border-b border-transparent bg-transparent"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-wrap items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-2.5" aria-label="Rancho 51 — início">
+      <div className="mx-auto flex h-24 max-w-wrap items-center justify-between px-6 lg:h-28 lg:px-10">
+        <a href="#top" className="flex items-center gap-3" aria-label="Rancho 51 — início">
           <Image
             src="/images/branding/rancho-badge.png"
             alt=""
-            width={40}
-            height={40}
-            className="h-9 w-9 shrink-0 sm:h-10 sm:w-10"
+            width={64}
+            height={64}
+            className="h-11 w-11 shrink-0 sm:h-12 sm:w-12 lg:h-14 lg:w-14"
             priority
           />
-          <span className="font-display text-2xl font-extrabold tracking-tight text-ink sm:text-[28px]">
+          <span className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl lg:text-[42px]">
             Rancho <span className="font-quote italic font-normal text-amber-soft">51</span>
           </span>
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-9 md:flex">
           {LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="relative font-body text-sm font-medium text-ink-dim transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-amber after:transition-transform after:duration-300 hover:text-ink hover:after:origin-left hover:after:scale-x-100"
+              className="relative font-body text-base font-medium text-ink-dim transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-amber after:transition-transform after:duration-300 hover:text-ink hover:after:origin-left hover:after:scale-x-100"
             >
               {link.label}
             </a>
@@ -78,7 +78,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href={DELIVERY_LINKS.whatsapp} className="px-5 py-3 text-xs">
+          <Button href={DELIVERY_LINKS.whatsapp} className="px-6 py-3.5 text-sm">
             Pedir Agora
           </Button>
         </div>
