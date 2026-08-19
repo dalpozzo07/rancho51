@@ -5,7 +5,7 @@ import { SITE } from "@/data/site-config";
 
 export function InstagramCTA() {
   return (
-    <section className="border-b border-border-soft bg-bg py-20">
+    <section className="section-glow-moss border-b border-border-soft bg-bg py-20">
       <div className="mx-auto max-w-wrap px-6 text-center">
         <Reveal className="flex flex-col items-center">
           <Instagram size={28} className="text-amber-soft" aria-hidden="true" />

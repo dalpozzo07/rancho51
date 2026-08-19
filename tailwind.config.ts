@@ -26,6 +26,14 @@ const config: Config = {
         },
         "on-amber": "var(--color-on-amber)",
         iron: "var(--color-iron)",
+        moss: {
+          DEFAULT: "var(--color-moss)",
+          soft: "var(--color-moss-soft)",
+        },
+        barn: {
+          DEFAULT: "var(--color-barn)",
+          soft: "var(--color-barn-soft)",
+        },
       },
       fontFamily: {
         display: ["var(--font-display)", "Georgia", "serif"],

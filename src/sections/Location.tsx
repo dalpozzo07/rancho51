@@ -6,7 +6,7 @@ import { MAPS_DIRECTIONS_URL, MAPS_EMBED_SRC, SITE } from "@/data/site-config";
 
 export function Location() {
   return (
-    <section id="localizacao" className="border-b border-border-soft bg-bg-soft py-24">
+    <section id="localizacao" className="section-glow-amber border-b border-border-soft bg-bg-soft py-24">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading eyebrow="Localização" title="Onde fica o Rancho" />
 

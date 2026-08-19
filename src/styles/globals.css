@@ -32,6 +32,13 @@
   /* Ferro/couro cru — usado em detalhes pequenos pra dar peso, sem virar cor principal. */
   --color-iron: #6b5a42;
 
+  /* Verde musgo (folha/erva-do-mato) e vermelho celeiro — acentos secundários,
+     usados com moderação pra tirar a sensação de cor única no site inteiro. */
+  --color-moss: #5f6f3e;
+  --color-moss-soft: #8a9c5c;
+  --color-barn: #86311f;
+  --color-barn-soft: #b04a30;
+
   --color-on-amber: #170f07;
 }
 
@@ -68,6 +75,22 @@ main,
 footer {
   position: relative;
   z-index: 1;
+}
+
+/* Lavagem de cor ambiente por seção — cada uma soma um brilho suave à cor de
+   fundo que já tem (não substitui), pra dar ritmo e tirar a sensação de bloco
+   monocromático empilhado. Nada disso conta como acento de UI: é atmosfera. */
+.section-glow-amber {
+  background-image: radial-gradient(ellipse 85% 75% at 8% -10%, rgba(198, 137, 58, 0.22), transparent 62%);
+}
+.section-glow-ember {
+  background-image: radial-gradient(ellipse 85% 75% at 92% 110%, rgba(201, 74, 36, 0.24), transparent 62%);
+}
+.section-glow-moss {
+  background-image: radial-gradient(ellipse 80% 70% at 90% -10%, rgba(95, 111, 62, 0.28), transparent 62%);
+}
+.section-glow-barn {
+  background-image: radial-gradient(ellipse 80% 70% at 10% 110%, rgba(134, 49, 31, 0.26), transparent 62%);
 }
 
 ::selection {

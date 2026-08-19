@@ -17,7 +17,7 @@ export function SpecialOfTheDay() {
             </div>
           )}
           <div>
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-ember-soft">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-barn-soft">
               Hoje no Rancho
             </span>
             <h2 className="mt-2 text-balance font-display text-3xl font-medium text-ink">

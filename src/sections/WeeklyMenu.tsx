@@ -13,7 +13,7 @@ export function WeeklyMenu() {
   const day = WEEKLY_MENU.find((d) => d.key === activeDay) ?? WEEKLY_MENU[0];
 
   return (
-    <section id="cardapio-semana" className="border-b border-border-soft bg-bg-soft py-24">
+    <section id="cardapio-semana" className="section-glow-amber border-b border-border-soft bg-bg-soft py-24">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading
           eyebrow="Cardápio da Semana"

@@ -2,7 +2,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function BrandStatement() {
   return (
-    <section id="o-rancho" className="border-b border-border-soft bg-bg py-24">
+    <section id="o-rancho" className="section-glow-moss border-b border-border-soft bg-bg py-24">
       <div className="mx-auto max-w-wrap px-6 text-center">
         <Reveal>
           <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">

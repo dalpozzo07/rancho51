@@ -6,7 +6,7 @@ import { FEATURED_PRODUCTS } from "@/data/featured-products";
 
 export function FeaturedProducts() {
   return (
-    <section className="border-b border-border-soft bg-bg-soft py-24">
+    <section className="section-glow-ember border-b border-border-soft bg-bg-soft py-24">
       <div className="mx-auto max-w-wrap px-6">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Porções" title="Pra dividir (ou não)" />

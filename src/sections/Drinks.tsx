@@ -4,7 +4,7 @@ import { DRINKS } from "@/data/drinks";
 
 export function Drinks() {
   return (
-    <section className="border-b border-border-soft bg-bg-soft py-16">
+    <section className="section-glow-amber border-b border-border-soft bg-bg-soft py-16">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading eyebrow="Bebidas" title="Pra acompanhar" align="center" className="mx-auto" />
 

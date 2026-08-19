@@ -6,7 +6,7 @@ import { FEATURED_SALGADOS } from "@/data/salgados";
 
 export function SaltySelection() {
   return (
-    <section className="border-b border-border-soft bg-bg py-24">
+    <section className="section-glow-moss border-b border-border-soft bg-bg py-24">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading
           eyebrow="Os Brutos do Rancho"

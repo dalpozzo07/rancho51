@@ -4,7 +4,7 @@ import { DELIVERY_LINKS } from "@/data/site-config";
 
 export function DeliveryCTA() {
   return (
-    <section id="delivery" className="border-b border-border-soft bg-bg-soft py-24">
+    <section id="delivery" className="section-glow-ember border-b border-border-soft bg-bg-soft py-24">
       <div className="mx-auto max-w-wrap px-6 text-center">
         <Reveal>
           <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">

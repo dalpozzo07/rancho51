@@ -1,4 +1,4 @@
-import { SeloRancho } from "@/components/ui/SeloRancho";
+import Image from "next/image";
 import { SITE } from "@/data/site-config";
 
 const LINKS = [
@@ -12,7 +12,13 @@ export function Footer() {
   return (
     <footer className="border-t border-border-soft bg-bg-soft">
       <div className="mx-auto flex max-w-wrap flex-col items-center gap-6 px-6 py-16 text-center">
-        <SeloRancho size={72} />
+        <Image
+          src="/images/branding/rancho-logo.png"
+          alt={`${SITE.name} — ${SITE.tagline}`}
+          width={168}
+          height={168}
+          className="h-32 w-32 sm:h-40 sm:w-40"
+        />
         <div>
           <p className="font-display text-2xl font-semibold text-ink">{SITE.name}</p>
           <p className="mt-1 font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">

@@ -27,3 +27,6 @@ next-env.d.ts
 
 # raw asset pack (originals live outside the tracked repo)
 /_assets_inbox/
+
+# local tool state
+/.claude/
