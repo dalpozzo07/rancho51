@@ -23,7 +23,7 @@ const WIDE_AREAS = new Set(["feijoada", "frango"]);
 
 export function Gallery() {
   return (
-    <section className="section-glow-barn border-b border-border-soft bg-bg py-24">
+    <section className="section-glow-wood border-b border-border-soft bg-bg py-24">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading
           eyebrow="Galeria"

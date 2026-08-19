@@ -30,14 +30,15 @@ const config: Config = {
           DEFAULT: "var(--color-moss)",
           soft: "var(--color-moss-soft)",
         },
-        barn: {
-          DEFAULT: "var(--color-barn)",
-          soft: "var(--color-barn-soft)",
+        wood: {
+          DEFAULT: "var(--color-wood)",
+          dark: "var(--color-wood-dark)",
         },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Georgia", "serif"],
-        body: ["var(--font-body)", "system-ui", "sans-serif"],
+        display: ["var(--font-archivo)", "system-ui", "sans-serif"],
+        body: ["var(--font-archivo)", "system-ui", "sans-serif"],
+        quote: ["var(--font-quote)", "Georgia", "serif"],
       },
       maxWidth: {
         wrap: "1200px",
@@ -47,9 +48,13 @@ const config: Config = {
           "0%, 100%": { backgroundPosition: "0% 50%", opacity: "0.65" },
           "50%": { backgroundPosition: "100% 50%", opacity: "1" },
         },
+        marquee: {
+          to: { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         embermove: "embermove 5s ease-in-out infinite",
+        marquee: "marquee 34s linear infinite",
       },
     },
   },

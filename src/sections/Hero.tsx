@@ -5,7 +5,7 @@ import { DELIVERY_LINKS, SITE } from "@/data/site-config";
 
 export function Hero() {
   return (
-    <section id="top" className="relative flex min-h-dvh items-end overflow-hidden bg-bg pt-20">
+    <section id="top" className="relative flex min-h-dvh items-end overflow-hidden bg-bg">
       <HeroParallaxImage
         src="/images/hero/hero-feijoada.png"
         alt="Marmita de feijoada completa do Rancho 51, com a churrasqueira acesa ao fundo"
@@ -18,7 +18,7 @@ export function Hero() {
           <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-amber-soft">
             {SITE.tagline}
           </span>
-          <h1 className="mt-4 max-w-2xl text-balance font-display text-4xl font-medium leading-[1.05] text-ink sm:text-6xl">
+          <h1 className="mt-4 max-w-2xl text-balance font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-ink sm:text-7xl">
             Sabor de verdade. Do jeito que tem que ser.
           </h1>
           <div

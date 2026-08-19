@@ -1,9 +1,14 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
 export default function Icon() {
+  const badgePath = join(process.cwd(), "public/images/branding/rancho-badge.png");
+  const badgeSrc = `data:image/png;base64,${readFileSync(badgePath).toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -13,15 +18,12 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#17120e",
+          background: "#0B0907",
           borderRadius: 6,
         }}
       >
-        <svg width="22" height="22" viewBox="0 0 56 52">
-          <circle cx="28" cy="26" r="21" fill="none" stroke="#8a6631" strokeWidth="2" />
-          <circle cx="28" cy="26" r="12" fill="none" stroke="#d3a253" strokeWidth="2" />
-          <circle cx="28" cy="26" r="4" fill="#c15f38" />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={badgeSrc} width={30} height={30} alt="" />
       </div>
     ),
     { ...size }

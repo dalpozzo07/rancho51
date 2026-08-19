@@ -8,38 +8,39 @@
   variam por tema: é um único mundo visual, deliberado.
 */
 :root {
-  --color-bg: #120d08;
-  --color-bg-soft: #17110a;
-  --color-surface: #20170d;
-  --color-surface-2: #2b2011;
-  --color-border: #4f3c1e;
-  --color-border-soft: #2f2413;
+  --color-bg: #0b0907;
+  --color-bg-soft: #141210;
+  --color-surface: #1d1a16;
+  --color-surface-2: #262019;
+  --color-border: #4a3a26;
+  --color-border-soft: #2a241c;
 
-  --color-text: #f5ecdb;
-  --color-text-dim: #c2ac88;
-  --color-text-faint: #8c765a;
+  --color-text: #f3eada;
+  --color-text-dim: #c9beac;
+  --color-text-faint: #8a8175;
 
-  /* Dourado mais bruto/oxidado — latão envelhecido, não joia polida. */
-  --color-amber: #c6893a;
-  --color-amber-soft: #e2ac5c;
-  --color-amber-dim: #7a551f;
+  /* Âmbar quente — cor primária: CTA, destaques, preço. */
+  --color-amber: #e9a83c;
+  --color-amber-soft: #ffc96b;
+  --color-amber-dim: #8a6323;
 
-  /* Fogo mais quente e vermelho — brasa de verdade, não terracota decorativo. */
-  --color-ember: #c94a24;
-  --color-ember-soft: #e87c46;
-  --color-ember-dim: #7a2c14;
+  /* Vermelho queimado — acento, nunca CTA. */
+  --color-ember: #a8380f;
+  --color-ember-soft: #c8571f;
+  --color-ember-dim: #5e2109;
 
-  /* Ferro/couro cru — usado em detalhes pequenos pra dar peso, sem virar cor principal. */
+  /* Madeira — fundos quentes e profundidade. */
+  --color-wood: #5b3a1e;
+  --color-wood-dark: #2e1d0f;
+
+  /* Ferro/couro cru — detalhes pequenos, sem virar cor principal. */
   --color-iron: #6b5a42;
 
-  /* Verde musgo (folha/erva-do-mato) e vermelho celeiro — acentos secundários,
-     usados com moderação pra tirar a sensação de cor única no site inteiro. */
-  --color-moss: #5f6f3e;
-  --color-moss-soft: #8a9c5c;
-  --color-barn: #86311f;
-  --color-barn-soft: #b04a30;
+  /* Verde folha — frescor, tags "novidade"; nunca fundo grande. */
+  --color-moss: #6e8b4a;
+  --color-moss-soft: #8fae66;
 
-  --color-on-amber: #170f07;
+  --color-on-amber: #150e05;
 }
 
 * {
@@ -89,8 +90,8 @@ footer {
 .section-glow-moss {
   background-image: radial-gradient(ellipse 80% 70% at 90% -10%, rgba(95, 111, 62, 0.28), transparent 62%);
 }
-.section-glow-barn {
-  background-image: radial-gradient(ellipse 80% 70% at 10% 110%, rgba(134, 49, 31, 0.26), transparent 62%);
+.section-glow-wood {
+  background-image: radial-gradient(ellipse 80% 70% at 10% 110%, rgba(91, 58, 30, 0.4), transparent 62%);
 }
 
 ::selection {

@@ -17,10 +17,10 @@ export function SpecialOfTheDay() {
             </div>
           )}
           <div>
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-barn-soft">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-ember-soft">
               Hoje no Rancho
             </span>
-            <h2 className="mt-2 text-balance font-display text-3xl font-medium text-ink">
+            <h2 className="mt-2 text-balance font-display text-3xl font-extrabold tracking-tight text-ink">
               {CURRENT_SPECIAL.title}
             </h2>
             {CURRENT_SPECIAL.dateLabel && <p className="mt-1 text-sm text-amber-soft">{CURRENT_SPECIAL.dateLabel}</p>}

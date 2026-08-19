@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Work_Sans } from "next/font/google";
+import { Archivo, Instrument_Serif } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MobileOrderButton } from "@/components/MobileOrderButton";
 import { SITE } from "@/data/site-config";
 import "@/styles/globals.css";
 
-const fraunces = Fraunces({
+const archivo = Archivo({
   subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+  variable: "--font-archivo",
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
-const workSans = Work_Sans({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-quote",
+  weight: ["400"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -53,7 +53,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${fraunces.variable} ${workSans.variable}`}>
+    <html lang="pt-BR" className={`${archivo.variable} ${instrumentSerif.variable}`}>
       <body className="pb-20 font-body md:pb-0">
         <script
           type="application/ld+json"

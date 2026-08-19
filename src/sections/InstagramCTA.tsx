@@ -12,7 +12,7 @@ export function InstagramCTA() {
           <span className="mt-4 font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">
             Acompanhe o Rancho
           </span>
-          <p className="mt-2 font-display text-2xl font-medium text-ink">{SITE.instagram.handle}</p>
+          <p className="mt-2 font-display text-2xl font-extrabold tracking-tight text-ink">{SITE.instagram.handle}</p>
           <p className="mt-2 max-w-sm text-sm text-ink-dim">{SITE.instagram.bio}</p>
           <div className="mt-6">
             <Button href={SITE.instagram.url}>Seguir no Instagram</Button>

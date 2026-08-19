@@ -20,7 +20,7 @@ export function Footer() {
           className="h-32 w-32 sm:h-40 sm:w-40"
         />
         <div>
-          <p className="font-display text-2xl font-semibold text-ink">{SITE.name}</p>
+          <p className="font-display text-2xl font-extrabold tracking-tight text-ink">{SITE.name}</p>
           <p className="mt-1 font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">
             {SITE.tagline}
           </p>

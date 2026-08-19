@@ -7,7 +7,7 @@ import { MARMITAS } from "@/data/marmitas";
 
 export function Marmitas() {
   return (
-    <section className="section-glow-barn border-b border-border-soft bg-bg py-24">
+    <section className="section-glow-wood border-b border-border-soft bg-bg py-24">
       <div className="mx-auto max-w-wrap px-6">
         <SectionHeading
           eyebrow="Marmitas"
@@ -30,7 +30,7 @@ export function Marmitas() {
                   />
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="font-display text-xl font-medium text-ink">{marmita.name}</h3>
+                  <h3 className="font-display text-xl font-bold tracking-tight text-ink">{marmita.name}</h3>
                   <p className="mt-2 text-sm text-ink-dim">{marmita.description}</p>
                 </div>
               </div>

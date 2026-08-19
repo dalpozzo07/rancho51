@@ -10,7 +10,7 @@ export function DeliveryCTA() {
           <span className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-amber">
             Delivery
           </span>
-          <h2 className="mx-auto mt-3 max-w-lg text-balance font-display text-3xl font-medium text-ink sm:text-4xl">
+          <h2 className="mx-auto mt-3 max-w-lg text-balance font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
             O Rancho chega até você.
           </h2>
           <p className="mx-auto mt-4 max-w-md text-ink-dim">

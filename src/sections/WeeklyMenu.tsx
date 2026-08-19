@@ -80,7 +80,7 @@ export function WeeklyMenu() {
               <span className="font-body text-xs font-semibold uppercase tracking-[0.14em] text-amber">
                 {day.dayLabel}
               </span>
-              <h3 className="mt-2 text-balance font-display text-2xl font-medium text-ink sm:text-3xl">
+              <h3 className="mt-2 text-balance font-display text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
                 {day.dishTitle}
               </h3>
               <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
